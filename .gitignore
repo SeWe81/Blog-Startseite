@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # yii console commands
 /yii
 /yii_test
@@ -41,3 +42,11 @@ phpunit.phar
 /backend/web/index.php
 /backend/web/index-test.php
 /backend/web/robots.txt
+=======
+assets/*
+!assets/.gitignore
+protected/runtime/*
+!protected/runtime/.gitignore
+protected/data/*.db
+themes/classic/views/
+>>>>>>> 920ac74fcdeff48e2e673648fa099314d2f51026
