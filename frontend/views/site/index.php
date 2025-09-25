@@ -1,52 +1,90 @@
 <?php
-
-/** @var yii\web\View $this */
-
-$this->title = 'My Yii Application';
+$this->title = 'MeinBlog';
 ?>
-<div class="site-index">
-    <div class="p-5 mb-4 bg-transparent rounded-3">
-        <div class="container-fluid py-5 text-center">
-            <h1 class="display-4">Congratulations!</h1>
-            <p class="fs-5 fw-light">You have successfully created your Yii-powered application.</p>
-            <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
-        </div>
-    </div>
 
-    <div class="body-content">
+<body>
+<div class=
+     "container">
 
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+    <!--Header-->
+    <header>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+        <div class="row py-2">
+            <div class="col-4">
+                <a href="#" class="text-muted p-2 text-decoration-none">Abonnieren</a>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+            <div class="col-4 text-center">
+                <a href="#" class="blog-header-title text-dark text-decoration-none">Blog-Startseite</a>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+            <div class="col-4 text-end">
+                <a href="#" class="text-muted p-2 text-decoration-none">Suchen</a>
             </div>
         </div>
+    </header>
+
+    <!--Nav-->
+    <div class="py-1">
+        <nav class="nav d-flex justify-content-center">
+            <a href="#" class="text-muted p-2 text-decoration-none">Startseite</a>
+            <a href="#" class="text-muted p-2 text-decoration-none">Gesundheit</a>
+            <a href="#" class="text-muted p-2 text-decoration-none">Organisation</a>
+            <a href="#" class="text-muted p-2 text-decoration-none">Technologie</a>
+            <a href="#" class="text-muted p-2 text-decoration-none">Reviews</a>
+            <a href="#" class="text-muted p-2 text-decoration-none">Tagträume</a>
+            <a href="#" class="text-muted p-2 text-decoration-none">Über mich</a>
+        </nav>
+    </div>
+
+    <!--Featured Jumbo-->
+    <div class="bg-dark text-white p-5 ms-4 me-4 rounded"><h1>Moderne Webentwicklung mit Bootstrap</h1>
+        <p class="lead">Beim Webdesign ist es wie beim Kochen:
+            Man hat ein Rezept (die Wireframes), ein paar Zutaten (HTML, CSS, JS)
+            und am Ende beschwert sich trotzdem jemand: „Das sieht bei mir anders aus!“
+            Responsive Design heißt übrigens nur: Dein Layout rennt weg,
+            sobald du das Browserfenster kleiner ziehst.</p>
+        <p class="lead"><a href="#" class="text-decoration-none">Weiter lesen</a></p></div>
+    <!--Featured-->
+    <div class="row row-cols-1 row-cols-md-2 g-4 m-2" ">
+        <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <p class="text-primary"><strong>Tagträume</strong></p>
+                        <h3><a href="#">Kultur im Jahr 2050</a></h3>
+                        <p class="text-muted"><?= date("d.m.y"); ?></p>
+                        <p>„Im Jahr 2050 trägt jeder Roboter Kulturbeutel –
+                            weil auch Maschinen mit Swag ins Museum gehn!“</p>
+                        <a href="#" class="text-decoration-none">Weiter lesen</a>
+                </div>
+            </div>
+        </div>
+    <div class="col">
+            <div class="card h-100">
+                <div class="card ">
+                    <div class="card-body">
+                        <p class="text-primary"><strong>Tagträume</strong></p>
+                        <h3><a href="#">Kultur im Jahr 2050</a></h3>
+                        <p class="text-muted"><?= date("d.m.y"); ?></p>
+                        <p>„Im Jahr 2050 trägt jeder Roboter Kulturbeutel –
+                            weil auch Maschinen mit Swag ins Museum gehn!“</p>
+                        <a href="#" class="text-decoration-none">Weiter lesen</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+<!-- Content section -->
+<main class="container">
+    <div class="row py-3">
+
+        <!-- 3 posts -->
+
+        <!-- Pagination -->
+
+        <!-- Sidebar -->
 
     </div>
-</div>
+</main>
+<!-- Footer -->
+
+</body>
